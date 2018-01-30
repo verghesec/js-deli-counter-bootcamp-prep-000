@@ -18,7 +18,7 @@ function currentLine(line) {
   var output = "The line is currently empty.";
   var separator = "";
 
-  if (line) {
+  if (line.length>0) {
     output = "The line is currently: ";
     for (let i=0; i<line.length; i++) {
       if (i<line.length - 1) {
