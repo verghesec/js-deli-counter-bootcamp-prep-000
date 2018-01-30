@@ -15,7 +15,20 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(line) {
+  var output = "The line is currently empty.";
+  var separator = "";
+
   if (line) {
-    return `The line is currently: 1. Ada, 2. Grace"
+    output = "The line is currently: ";
+    for (let i-=0; i<line.length; i++) {
+      if (i<line.length - 1) {
+        separator = ",";
+      }
+      else {
+        separator ="";
+      }
+      output = output + `${i}. ${line[i]}${separator}`
+    }
   }
+  return output;
 }
