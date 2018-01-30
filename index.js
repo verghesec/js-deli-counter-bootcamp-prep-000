@@ -20,7 +20,7 @@ function currentLine(line) {
 
   if (line) {
     output = "The line is currently: ";
-    for (let i-=0; i<line.length; i++) {
+    for (let i=0; i<line.length; i++) {
       if (i<line.length - 1) {
         separator = ",";
       }
