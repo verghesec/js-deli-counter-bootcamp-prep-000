@@ -22,12 +22,12 @@ function currentLine(line) {
     output = "The line is currently: ";
     for (let i=0; i<line.length; i++) {
       if (i<line.length - 1) {
-        separator = ",";
+        separator = ", ";
       }
       else {
         separator ="";
       }
-      output = output + `${i}. ${line[i]}${separator}`
+      output = output + `${i+1}. ${line[i]}${separator}`
     }
   }
   return output;
